@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cornerRadiusSmall"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/marginSmall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/paddingSmall"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/ly_namakantor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_height">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_18_00"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Body3.Bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_nameloket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txt_jam"
+                android:text="@string/kantor_tiara_mas_bima"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:paddingHorizontal="@dimen/paddingSmall"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/list_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/paddingSmall"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_tujuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/tujuan"
+                    android:visibility="visible"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_harga"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/harga"
+                    android:visibility="visible"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_jumkursi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/kursi"
+                    android:visibility="visible"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/ly_data"
+                layout="@layout/layout_list_data" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

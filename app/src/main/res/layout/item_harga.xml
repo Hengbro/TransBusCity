@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/gray4"
+    app:cardBackgroundColor="@color/transparant2">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/gray4"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="@dimen/paddingSmall"
+        app:cardCornerRadius="@dimen/cornerRadiusNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:paddingHorizontal="@dimen/paddingSmall"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_awal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/bima"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_assetright_alternate_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    app:tint="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_tujuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/merak"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_komisi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rp_270_000"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_jumlah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_50"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</com.google.android.material.card.MaterialCardView>

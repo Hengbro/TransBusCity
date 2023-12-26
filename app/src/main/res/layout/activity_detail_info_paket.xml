@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginLarge"
+        app:cardCornerRadius="@dimen/cornerRadiusSmall">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/paddingSmall"
+            android:paddingVertical="@dimen/paddingSmall"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pengirim"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginSmall">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nmPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/nama_pengirim"
+                    android:inputType="textEmailAddress"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginSmall">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_notlp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/nomor_telepon_pengirim"
+                    android:inputType="textEmailAddress"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/alamat_pengirim"
+                    android:inputType="textEmailAddress"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginLarge"
+        app:cardCornerRadius="@dimen/cornerRadiusSmall">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/paddingSmall"
+            android:paddingVertical="@dimen/paddingSmall"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penerima"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginSmall">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nmPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/nama_penerima"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginSmall">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_notlppenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/nomor_telepon_penerima"
+                    android:inputType="number"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_alamatpenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/alamat_pengirim"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginSmall">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_height"
+                    android:hint="@string/keterangan"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginLarge"
+        app:cardCornerRadius="@dimen/cornerRadiusSmall">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginSmall"
+            android:layout_marginVertical="@dimen/marginSmall">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/barang"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cek"
+                style="@style/Button.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_height"
+                android:text="@string/list_paket"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

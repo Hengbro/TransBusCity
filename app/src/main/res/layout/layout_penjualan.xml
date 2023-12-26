@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/transparant2">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/gray4"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparant_full"
+        app:cardCornerRadius="@dimen/cornerRadiusNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingSmall">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_judulpenjualan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/penjualan_online"
+                android:layout_marginBottom="@dimen/paddingSmall"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/paddingSmall"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tiket"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/total"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/komisi"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/setoran"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/gray1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/paddingSmall"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_jumtiket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_69"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_totbyar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:text="@string/_31_243_000"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_komisi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/_0"
+                    android:maxLines="1"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/_31_243_000"
+                    android:maxLines="1"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</com.google.android.material.card.MaterialCardView>

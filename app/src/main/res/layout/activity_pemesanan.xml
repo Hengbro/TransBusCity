@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/top_fragment">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#F3ECC5">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/marginNormal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_50sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_height"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_asset_left_alternate_arrow"
+                app:tint="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kembali"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/img_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            app:cardCornerRadius="@dimen/_100sdp"
+            app:cardBackgroundColor="@color/transparant2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kamis_07_sep_2023"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:textColor="@color/white"
+                android:paddingHorizontal="@dimen/paddingSmall"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/textAppearance.Body3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginNormal"
+            app:cardCornerRadius="@dimen/cornerRadiusSmall"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/transparant2"
+            android:layout_marginBottom="@dimen/marginSmall">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_18_00"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/textAppearance.Body2.Bold"
+                    android:paddingHorizontal="@dimen/paddingSmall"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txt_jam"
+                    android:layout_centerHorizontal="true"
+                    android:paddingHorizontal="@dimen/paddingNormal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_kotaasal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bima -"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_kotatujuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kota"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/type_jalur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/bima_mrt_sby_jkt_executive"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/textAppearance.Caption3.Bold"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/type_nexttrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/bima_domba_sumbawa_mataram_balibanyu"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/textAppearance.Caption3"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/cornerRadiusSmall"
+            android:layout_marginTop="@dimen/marginLarge"
+            app:strokeColor="@color/gray4"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnTiket"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/paddingNormal"
+                    android:text="@string/tiket"
+                    android:background="@color/colorPrimary"
+                    android:textAppearance="@style/textAppearance.Caption2.Bold"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray4"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnPaket"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/paddingNormal"
+                    android:text="@string/paket"
+                    android:background="@color/white"
+                    android:textAppearance="@style/textAppearance.Caption2.Bold" />
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray4"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnManifest"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/paddingNormal"
+                    android:text="@string/manifest"
+                    android:background="@color/white"
+                    android:textAppearance="@style/textAppearance.Caption2.Bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+            android:id="@+id/ly_detaillist"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/mainFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
