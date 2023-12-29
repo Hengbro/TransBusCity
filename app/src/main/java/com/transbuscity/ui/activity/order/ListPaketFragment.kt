@@ -10,6 +10,7 @@ import com.transbuscity.ui.activity.home.HomeViewModel
 import com.transbuscity.ui.base.BaseFragment
 import com.transbuscity.core.source.remote.network.State
 import com.transbuscity.databinding.ActivityListPaketBinding
+import com.transbuscity.ui.activity.data.DataPenumpangActivity
 import com.transbuscity.ui.activity.order.adapter.PaketAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -42,7 +43,7 @@ class ListPaketFragment(
     private fun mainButton() {
         binding.apply {
             layout.setOnClickListener {
-                intentActivity(DataPaketActivity::class.java)
+                intentActivity(DataPenumpangActivity::class.java)
             }
 
         }
