@@ -11,7 +11,6 @@ import com.transbuscity.ui.base.BaseFragment
 import com.transbuscity.core.source.remote.network.State
 import com.transbuscity.databinding.ActivityListPaketBinding
 import com.transbuscity.ui.activity.order.adapter.PaketAdapter
-import com.transbuscity.ui.activity.order.adapter.TiketAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ListPaketFragment(
@@ -42,6 +41,9 @@ class ListPaketFragment(
     @SuppressLint("SetTextI18n")
     private fun mainButton() {
         binding.apply {
+            layout.setOnClickListener {
+                intentActivity(DataPaketActivity::class.java)
+            }
 
         }
     }

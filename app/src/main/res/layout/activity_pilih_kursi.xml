@@ -711,6 +711,7 @@
             style="@style/Button.OutlinePrimary"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoShow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

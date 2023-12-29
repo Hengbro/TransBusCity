@@ -1,4 +1,4 @@
-package com.transbuscity.ui.activity.order
+package com.transbuscity.ui.activity.data
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -18,34 +18,30 @@ import com.inyongtisto.myhelper.extension.toastError
 import com.transbuscity.R
 import com.transbuscity.core.model.Result
 import com.transbuscity.core.source.remote.network.State
+import com.transbuscity.databinding.ActivityDataDiriPenumpangBinding
+import com.transbuscity.databinding.ActivityDetailDataBinding
 import com.transbuscity.databinding.ActivityPemesananBinding
-import com.transbuscity.databinding.ActivityPilihKursiBinding
-import com.transbuscity.ui.activity.data.DataPenumpangActivity
 import com.transbuscity.ui.activity.home.HomeViewModel
 import com.transbuscity.ui.activity.order.adapter.PickUpAdapter
 import com.transbuscity.ui.activity.order.adapter.TiketAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class ChoiceChairActivity :  AppCompatActivity(){
+class DataPenumpangActivity :  AppCompatActivity(){
 
-    private var _binding: ActivityPilihKursiBinding? = null
-
+    private var _binding: ActivityDetailDataBinding? = null
     private val binding get() = _binding!!
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityPilihKursiBinding.inflate(layoutInflater)
+        _binding = ActivityDetailDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        mainButton()
     }
 
     private fun mainButton(){
         binding.apply {
-            btnGoShow.setOnClickListener {
-                intentActivity(DataPenumpangActivity::class.java)
-            }
-
             btnBack.setOnClickListener {
                 onBackPressed()
             }
@@ -54,4 +50,5 @@ class ChoiceChairActivity :  AppCompatActivity(){
     private fun setAdapter(){
 
     }
+
 }

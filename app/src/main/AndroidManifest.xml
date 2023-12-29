@@ -37,6 +37,8 @@
         <activity android:name="com.transbuscity.ui.activity.order.ListPaketActivity" />
         <activity android:name="com.transbuscity.ui.activity.order.ListTujuanActivity" />
         <activity android:name="com.transbuscity.ui.activity.order.ChoiceChairActivity" />
+        <activity android:name="com.transbuscity.ui.activity.data.DataPaketActivity" />
+        <activity android:name="com.transbuscity.ui.activity.data.DataPenumpangActivity" />
     </application>
 
 </manifest>
