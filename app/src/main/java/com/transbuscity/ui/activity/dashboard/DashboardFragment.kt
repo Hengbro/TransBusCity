@@ -1,4 +1,4 @@
-package com.transbuscity.ui.dashboard
+package com.transbuscity.ui.activity.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

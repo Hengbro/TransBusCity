@@ -31,7 +31,7 @@ class JadwalRepository (local: LocalDataSource, val remote: RemoteDataSource) {
             remote.getJadwalAsal().let {
                 if (it.isSuccessful) {
                     val body = it.body()
-                    val data = body?.result
+                    val data = body?.tiketux?.result
                     emit(Resource.success(data))
                 } else {
                     emit(Resource.error(it.getErrorBody()?.message.orEmpty(), null))
@@ -48,7 +48,7 @@ class JadwalRepository (local: LocalDataSource, val remote: RemoteDataSource) {
             remote.getJadwalTujuan().let {
                 if (it.isSuccessful) {
                     val body = it.body()
-                    val data = body?.result
+                    val data = body?.tiketux?.result
                     emit(Resource.success(data))
                 } else {
                     emit(Resource.error(it.getErrorBody()?.message.orEmpty(), null))

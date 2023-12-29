@@ -1,4 +1,4 @@
-package com.transbuscity.ui.notifications
+package com.transbuscity.ui.activity.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater

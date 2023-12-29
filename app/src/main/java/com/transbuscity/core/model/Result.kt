@@ -21,5 +21,7 @@ data class Result(
     val rute: String?,
     val rute_kota: String?,
     val terisi: Int?,
-    val tersedia: Int?
+    val tersedia: Int?,
+    val tujuan: JadwalTujuan? = null,
+
 ) : Parcelable

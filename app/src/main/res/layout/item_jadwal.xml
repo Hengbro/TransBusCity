@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/paddingSmall"
         android:background="@color/white">
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -40,20 +41,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/name"
-                    android:layout_gravity="center_vertical"
-                    android:textAppearance="@style/textAppearance.Body3.Bold"/>
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/ic_assetright_alternate_arrow"
-                    android:padding="@dimen/buttonImagePadding"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/txt_kotatujuan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/kota"
                     android:layout_gravity="center_vertical"
                     android:textAppearance="@style/textAppearance.Body3.Bold"/>
 

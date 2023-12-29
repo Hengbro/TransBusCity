@@ -35,23 +35,14 @@
                 android:textAppearance="@style/textAppearance.Body3.Bold"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/txt_harga"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:text="@string/rp_270_000"
-                android:maxLines="1"
-                android:layout_gravity="center_vertical"
-                android:textAppearance="@style/textAppearance.Body3.Bold"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt_jumlah"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
+                android:layout_weight="1"
                 android:text="@string/_50"
                 android:maxLines="1"
                 android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
                 android:textAppearance="@style/textAppearance.Body3.Bold"/>
 
         </LinearLayout>

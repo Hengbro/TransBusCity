@@ -1,40 +1,45 @@
-package com.transbuscity.ui.home.adapter
+package com.transbuscity.ui.activity.order.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.inyongtisto.myhelper.extension.intentActivity
+import com.inyongtisto.myhelper.extension.toRupiah
+import com.transbuscity.core.model.JadwalTujuan
 import com.transbuscity.core.model.Result
+import com.transbuscity.databinding.ItemHargaBinding
 import com.transbuscity.databinding.ItemJadwalBinding
+import com.transbuscity.ui.activity.order.TiketOrder
 
 @SuppressLint("NotifyDataSetChanged")
-class HomeAdapter () : RecyclerView.Adapter<HomeAdapter.ViewHolder>(){
+class TiketAdapter () : RecyclerView.Adapter<TiketAdapter.ViewHolder>(){
 
-    private var data = ArrayList<Result?>()
+    private var data = ArrayList<JadwalTujuan?>()
 
-    inner class ViewHolder(private val itemBinding: ItemJadwalBinding): RecyclerView.ViewHolder(itemBinding.root){
-        fun bind(item : Result?, position: Int){
+    inner class ViewHolder(private val itemBinding: ItemHargaBinding): RecyclerView.ViewHolder(itemBinding.root){
+        fun bind(item : JadwalTujuan?, position: Int){
             itemBinding.apply {
-                txtJam.text = item?.jam
-                txtKotaasal.text = item?.rute
-                typeTempatddk.text = item?.layanan
+                txtNametujuan.text = item?.nama
+                txtHarga.text = item?.tarif.toRupiah()
+                txtJumlah.text = item?.tersedia.toString()
                 val context = root.context
                 layout.setOnClickListener {
-
+                    //context.intentActivity(TiketOrder::class.java, item)
                 }
             }
         }
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun addItems(items: List<Result?>?){
+    fun addItems(items: List<JadwalTujuan?>?){
         data.clear()
         items?.let { data.addAll(it) }
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(ItemJadwalBinding.inflate(
+        return ViewHolder(ItemHargaBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false))

@@ -32,7 +32,7 @@
     <string name="bima_mrt_sby_jkt_executive">BIMA-MRT-SBY-JKT / Executive</string>
     <string name="paket">Paket</string>
     <string name="manifest">Manifest</string>
-    <string name="pick_up">Pick up</string>
+    <string name="pick_up">Pick Up</string>
     <string name="rp_300_000">Rp 300.000</string>
     <string name="total_bayar">Total Bayar:</string>
     <string name="go_show">Go Show</string>
@@ -66,4 +66,10 @@
     <string name="barang">Barang</string>
     <string name="list_paket">List Paket</string>
     <string name="rute">Rute</string>
+    <string name="semarang">Semarang</string>
+    <string name="cetak_manifest">Cetak Manifest</string>
+    <string name="deck_1">Deck 1</string>
+    <string name="deck_2">Deck 2</string>
+    <string name="deck_3">Deck 3</string>
+    <string name="supir">Supir</string>
 </resources>

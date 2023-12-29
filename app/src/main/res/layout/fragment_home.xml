@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.activity.home.HomeFragment">
 
     <TextView
         android:id="@+id/text_home"
@@ -123,6 +123,7 @@
                     android:src="@drawable/ic_asset_calendar"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/today"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kamis_07_sep_2023"

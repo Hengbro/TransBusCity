@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/paddingSmall"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/semarang"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/textAppearance.Body2.Bold"
+        android:paddingHorizontal="@dimen/paddingSmall"/>
+
+</RelativeLayout>

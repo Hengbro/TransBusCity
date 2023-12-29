@@ -1,10 +1,9 @@
-package com.transbuscity.ui.dashboard
+package com.transbuscity.ui.activity.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
-
+class NotificationsViewModel : ViewModel() {
 
 }
